@@ -1,0 +1,23 @@
+- name: create a folder for placing tomcat
+  file:
+    path: /home/vibakar/Downloads/ILP3/tomcat_server
+    state: directory
+
+- name: Unarchive tomcat
+  unarchive:
+    src: /home/vibakar/Downloads/tar_files/apache-tomcat-8.5.39.zip
+    dest: /home/vibakar/Downloads/ILP3/tomcat_server
+    mode: u+rwx
+
+- name: configure tomcat port
+  template:
+    src: server.xml.j2
+    dest: "{{tomcat_path}}/conf/server.xml"
+
+- name: copy bookstore-app dist to tomcat 
+  copy:
+    src: /home/vibakar/Downloads/workspace/bookstore-app/dist
+    dest: "{{tomcat_path}}/webapps/ROOT/"
+
+- name: start tomcat
+  shell: "{{tomcat_path}}/bin/startup.sh"

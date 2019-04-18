@@ -1,0 +1,244 @@
+2019-04-17 19:27:06,516 p=1186 u=vibakar |  - roles/tomcat was created successfully
+2019-04-17 19:36:27,599 p=1421 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 19:36:27,661 p=1421 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 19:36:30,112 p=1421 u=vibakar |  ok: [local]
+2019-04-17 19:36:30,165 p=1421 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 19:36:30,481 p=1421 u=vibakar |  changed: [local]
+2019-04-17 19:36:30,483 p=1421 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 19:36:30,483 p=1421 u=vibakar |  local                      : ok=2    changed=1    unreachable=0    failed=0   
+2019-04-17 19:59:36,858 p=1831 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 19:59:36,867 p=1831 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 19:59:38,226 p=1831 u=vibakar |  ok: [local]
+2019-04-17 19:59:38,283 p=1831 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 19:59:38,637 p=1831 u=vibakar |  ok: [local]
+2019-04-17 19:59:38,753 p=1831 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 19:59:38,801 p=1831 u=vibakar |  fatal: [local]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vibakar/Downloads/apache-tomcat-8.5.39.zip' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-04-17 19:59:38,803 p=1831 u=vibakar |  	to retry, use: --limit @/home/vibakar/Downloads/ILP3/roles/tomcat/server.retry
+
+2019-04-17 19:59:38,804 p=1831 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 19:59:38,804 p=1831 u=vibakar |  local                      : ok=2    changed=0    unreachable=0    failed=1   
+2019-04-17 19:59:55,384 p=2042 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 19:59:55,393 p=2042 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 19:59:56,725 p=2042 u=vibakar |  ok: [local]
+2019-04-17 19:59:56,782 p=2042 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 19:59:57,135 p=2042 u=vibakar |  ok: [local]
+2019-04-17 19:59:57,190 p=2042 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 19:59:58,413 p=2042 u=vibakar |  changed: [local]
+2019-04-17 19:59:58,415 p=2042 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 19:59:58,415 p=2042 u=vibakar |  local                      : ok=3    changed=1    unreachable=0    failed=0   
+2019-04-17 20:05:43,187 p=2432 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 20:05:43,197 p=2432 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 20:05:44,482 p=2432 u=vibakar |  ok: [local]
+2019-04-17 20:05:44,539 p=2432 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 20:05:44,878 p=2432 u=vibakar |  ok: [local]
+2019-04-17 20:05:44,933 p=2432 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 20:05:45,870 p=2432 u=vibakar |  ok: [local]
+2019-04-17 20:05:46,008 p=2432 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-17 20:05:46,059 p=2432 u=vibakar |  fatal: [local]: FAILED! => {"changed": false, "msg": "Could not find or access 'server.xml.j2'\nSearched in:\n\t/home/vibakar/Downloads/ILP3/roles/tomcat/templates/server.xml.j2\n\t/home/vibakar/Downloads/ILP3/roles/tomcat/server.xml.j2\n\t/home/vibakar/Downloads/ILP3/roles/tomcat/tasks/templates/server.xml.j2\n\t/home/vibakar/Downloads/ILP3/roles/tomcat/tasks/server.xml.j2\n\t/home/vibakar/Downloads/ILP3/roles/tomcat/templates/server.xml.j2\n\t/home/vibakar/Downloads/ILP3/roles/tomcat/server.xml.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-04-17 20:05:46,060 p=2432 u=vibakar |  	to retry, use: --limit @/home/vibakar/Downloads/ILP3/roles/tomcat/server.retry
+
+2019-04-17 20:05:46,061 p=2432 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 20:05:46,061 p=2432 u=vibakar |  local                      : ok=3    changed=0    unreachable=0    failed=1   
+2019-04-17 20:06:14,031 p=2632 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 20:06:14,041 p=2632 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 20:06:15,355 p=2632 u=vibakar |  ok: [local]
+2019-04-17 20:06:15,411 p=2632 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 20:06:15,735 p=2632 u=vibakar |  ok: [local]
+2019-04-17 20:06:15,792 p=2632 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 20:06:16,682 p=2632 u=vibakar |  ok: [local]
+2019-04-17 20:06:16,735 p=2632 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-17 20:06:17,172 p=2632 u=vibakar |  changed: [local]
+2019-04-17 20:06:17,233 p=2632 u=vibakar |  TASK [tomcat : start tomcat] ***************************************************
+2019-04-17 20:06:17,604 p=2632 u=vibakar |  fatal: [local]: FAILED! => {"changed": true, "cmd": "/home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/startup.sh", "delta": "0:00:00.002498", "end": "2019-04-17 20:06:17.586806", "msg": "non-zero return code", "rc": 126, "start": "2019-04-17 20:06:17.584308", "stderr": "/bin/sh: 1: /home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/startup.sh: Permission denied", "stderr_lines": ["/bin/sh: 1: /home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/startup.sh: Permission denied"], "stdout": "", "stdout_lines": []}
+2019-04-17 20:06:17,606 p=2632 u=vibakar |  	to retry, use: --limit @/home/vibakar/Downloads/ILP3/roles/tomcat/server.retry
+
+2019-04-17 20:06:17,606 p=2632 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 20:06:17,606 p=2632 u=vibakar |  local                      : ok=4    changed=1    unreachable=0    failed=1   
+2019-04-17 20:06:52,882 p=2893 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 20:06:52,892 p=2893 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 20:06:53,392 p=2893 u=vibakar |  fatal: [local]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2019-04-17 20:06:53,394 p=2893 u=vibakar |  	to retry, use: --limit @/home/vibakar/Downloads/ILP3/roles/tomcat/server.retry
+
+2019-04-17 20:06:53,394 p=2893 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 20:06:53,394 p=2893 u=vibakar |  local                      : ok=0    changed=0    unreachable=0    failed=1   
+2019-04-17 20:07:40,819 p=2958 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 20:07:40,829 p=2958 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 20:07:42,194 p=2958 u=vibakar |  ok: [local]
+2019-04-17 20:07:42,252 p=2958 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 20:07:42,615 p=2958 u=vibakar |  ok: [local]
+2019-04-17 20:07:42,668 p=2958 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 20:07:43,849 p=2958 u=vibakar |  changed: [local]
+2019-04-17 20:07:43,899 p=2958 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-17 20:07:44,315 p=2958 u=vibakar |  changed: [local]
+2019-04-17 20:07:44,368 p=2958 u=vibakar |  TASK [tomcat : start tomcat] ***************************************************
+2019-04-17 20:07:44,706 p=2958 u=vibakar |  fatal: [local]: FAILED! => {"changed": true, "cmd": "/home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/startup.sh", "delta": "0:00:00.002416", "end": "2019-04-17 20:07:44.687934", "msg": "non-zero return code", "rc": 126, "start": "2019-04-17 20:07:44.685518", "stderr": "/bin/sh: 1: /home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/startup.sh: Permission denied", "stderr_lines": ["/bin/sh: 1: /home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/startup.sh: Permission denied"], "stdout": "", "stdout_lines": []}
+2019-04-17 20:07:44,708 p=2958 u=vibakar |  	to retry, use: --limit @/home/vibakar/Downloads/ILP3/roles/tomcat/server.retry
+
+2019-04-17 20:07:44,708 p=2958 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 20:07:44,708 p=2958 u=vibakar |  local                      : ok=4    changed=2    unreachable=0    failed=1   
+2019-04-17 20:08:28,991 p=3388 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 20:08:29,001 p=3388 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 20:08:30,292 p=3388 u=vibakar |  ok: [local]
+2019-04-17 20:08:30,347 p=3388 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 20:08:30,705 p=3388 u=vibakar |  ok: [local]
+2019-04-17 20:08:30,762 p=3388 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 20:08:31,867 p=3388 u=vibakar |  changed: [local]
+2019-04-17 20:08:31,922 p=3388 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-17 20:08:32,350 p=3388 u=vibakar |  changed: [local]
+2019-04-17 20:08:32,408 p=3388 u=vibakar |  TASK [tomcat : start tomcat] ***************************************************
+2019-04-17 20:08:32,815 p=3388 u=vibakar |  changed: [local]
+2019-04-17 20:08:32,819 p=3388 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 20:08:32,819 p=3388 u=vibakar |  local                      : ok=5    changed=3    unreachable=0    failed=0   
+2019-04-17 20:09:37,608 p=3910 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 20:09:37,621 p=3910 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 20:09:38,903 p=3910 u=vibakar |  ok: [local]
+2019-04-17 20:09:38,959 p=3910 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 20:09:39,321 p=3910 u=vibakar |  ok: [local]
+2019-04-17 20:09:39,375 p=3910 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 20:09:40,551 p=3910 u=vibakar |  changed: [local]
+2019-04-17 20:09:40,605 p=3910 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-17 20:09:40,994 p=3910 u=vibakar |  changed: [local]
+2019-04-17 20:09:41,045 p=3910 u=vibakar |  TASK [tomcat : start tomcat] ***************************************************
+2019-04-17 20:09:41,349 p=3910 u=vibakar |  fatal: [local]: FAILED! => {"changed": true, "cmd": "/home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/startup.sh", "delta": "0:00:00.010596", "end": "2019-04-17 20:09:41.331415", "msg": "non-zero return code", "rc": 2, "start": "2019-04-17 20:09:41.320819", "stderr": "touch: cannot touch '/home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/logs/catalina.out': Permission denied\n/home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/catalina.sh: 464: /home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/catalina.sh: cannot create /home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/logs/catalina.out: Permission denied", "stderr_lines": ["touch: cannot touch '/home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/logs/catalina.out': Permission denied", "/home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/catalina.sh: 464: /home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/bin/catalina.sh: cannot create /home/vibakar/Downloads/ILP3/tomcat/apache-tomcat-8.5.39/logs/catalina.out: Permission denied"], "stdout": "", "stdout_lines": []}
+2019-04-17 20:09:41,352 p=3910 u=vibakar |  	to retry, use: --limit @/home/vibakar/Downloads/ILP3/roles/tomcat/server.retry
+
+2019-04-17 20:09:41,352 p=3910 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 20:09:41,352 p=3910 u=vibakar |  local                      : ok=4    changed=2    unreachable=0    failed=1   
+2019-04-17 20:10:05,944 p=4180 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 20:10:05,958 p=4180 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 20:10:07,247 p=4180 u=vibakar |  ok: [local]
+2019-04-17 20:10:07,304 p=4180 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 20:10:07,690 p=4180 u=vibakar |  ok: [local]
+2019-04-17 20:10:07,766 p=4180 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 20:10:08,947 p=4180 u=vibakar |  changed: [local]
+2019-04-17 20:10:09,014 p=4180 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-17 20:10:09,447 p=4180 u=vibakar |  changed: [local]
+2019-04-17 20:10:09,509 p=4180 u=vibakar |  TASK [tomcat : start tomcat] ***************************************************
+2019-04-17 20:10:09,814 p=4180 u=vibakar |  changed: [local]
+2019-04-17 20:10:09,817 p=4180 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 20:10:09,817 p=4180 u=vibakar |  local                      : ok=5    changed=3    unreachable=0    failed=0   
+2019-04-17 20:13:04,962 p=4731 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 20:13:04,972 p=4731 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 20:13:06,327 p=4731 u=vibakar |  ok: [local]
+2019-04-17 20:13:06,387 p=4731 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 20:13:06,719 p=4731 u=vibakar |  ok: [local]
+2019-04-17 20:13:06,782 p=4731 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 20:13:07,846 p=4731 u=vibakar |  changed: [local]
+2019-04-17 20:13:07,909 p=4731 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-17 20:13:08,337 p=4731 u=vibakar |  changed: [local]
+2019-04-17 20:13:08,399 p=4731 u=vibakar |  TASK [tomcat : start tomcat] ***************************************************
+2019-04-17 20:13:08,736 p=4731 u=vibakar |  changed: [local]
+2019-04-17 20:13:08,739 p=4731 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 20:13:08,739 p=4731 u=vibakar |  local                      : ok=5    changed=3    unreachable=0    failed=0   
+2019-04-17 20:15:57,276 p=5298 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 20:15:57,289 p=5298 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 20:15:58,666 p=5298 u=vibakar |  ok: [local]
+2019-04-17 20:15:58,721 p=5298 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 20:15:59,084 p=5298 u=vibakar |  ok: [local]
+2019-04-17 20:15:59,137 p=5298 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 20:16:00,229 p=5298 u=vibakar |  changed: [local]
+2019-04-17 20:16:00,280 p=5298 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-17 20:16:00,709 p=5298 u=vibakar |  changed: [local]
+2019-04-17 20:16:00,770 p=5298 u=vibakar |  TASK [tomcat : copy bookstore-app dist to tomcat] ******************************
+2019-04-17 20:16:05,692 p=5298 u=vibakar |  changed: [local]
+2019-04-17 20:16:05,745 p=5298 u=vibakar |  TASK [tomcat : start tomcat] ***************************************************
+2019-04-17 20:16:06,025 p=5298 u=vibakar |  changed: [local]
+2019-04-17 20:16:06,030 p=5298 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 20:16:06,031 p=5298 u=vibakar |  local                      : ok=6    changed=4    unreachable=0    failed=0   
+2019-04-17 20:18:13,741 p=6429 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-17 20:18:13,753 p=6429 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-17 20:18:15,072 p=6429 u=vibakar |  ok: [local]
+2019-04-17 20:18:15,128 p=6429 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-17 20:18:15,457 p=6429 u=vibakar |  ok: [local]
+2019-04-17 20:18:15,511 p=6429 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-17 20:18:16,658 p=6429 u=vibakar |  changed: [local]
+2019-04-17 20:18:16,712 p=6429 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-17 20:18:17,156 p=6429 u=vibakar |  changed: [local]
+2019-04-17 20:18:17,211 p=6429 u=vibakar |  TASK [tomcat : copy bookstore-app dist to tomcat] ******************************
+2019-04-17 20:18:22,000 p=6429 u=vibakar |  changed: [local]
+2019-04-17 20:18:22,052 p=6429 u=vibakar |  TASK [tomcat : start tomcat] ***************************************************
+2019-04-17 20:18:22,359 p=6429 u=vibakar |  changed: [local]
+2019-04-17 20:18:22,362 p=6429 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-17 20:18:22,362 p=6429 u=vibakar |  local                      : ok=6    changed=4    unreachable=0    failed=0   
+2019-04-18 09:13:55,490 p=8694 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-18 09:13:55,501 p=8694 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-18 09:13:56,792 p=8694 u=vibakar |  ok: [local]
+2019-04-18 09:13:56,848 p=8694 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-18 09:13:57,203 p=8694 u=vibakar |  ok: [local]
+2019-04-18 09:13:57,257 p=8694 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-18 09:13:58,394 p=8694 u=vibakar |  changed: [local]
+2019-04-18 09:13:58,448 p=8694 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-18 09:13:58,912 p=8694 u=vibakar |  changed: [local]
+2019-04-18 09:13:58,978 p=8694 u=vibakar |  TASK [tomcat : copy bookstore-app dist to tomcat] ******************************
+2019-04-18 09:14:03,883 p=8694 u=vibakar |  changed: [local]
+2019-04-18 09:14:03,944 p=8694 u=vibakar |  TASK [tomcat : start tomcat] ***************************************************
+2019-04-18 09:14:04,230 p=8694 u=vibakar |  changed: [local]
+2019-04-18 09:14:04,234 p=8694 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-18 09:14:04,235 p=8694 u=vibakar |  local                      : ok=6    changed=4    unreachable=0    failed=0   
+2019-04-18 09:19:25,065 p=10028 u=vibakar |  PLAY [local] *******************************************************************
+2019-04-18 09:19:25,075 p=10028 u=vibakar |  TASK [Gathering Facts] *********************************************************
+2019-04-18 09:19:26,371 p=10028 u=vibakar |  ok: [local]
+2019-04-18 09:19:26,425 p=10028 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *****************************
+2019-04-18 09:19:26,820 p=10028 u=vibakar |  ok: [local]
+2019-04-18 09:19:26,874 p=10028 u=vibakar |  TASK [tomcat : Unarchive tomcat] ***********************************************
+2019-04-18 09:19:28,001 p=10028 u=vibakar |  changed: [local]
+2019-04-18 09:19:28,056 p=10028 u=vibakar |  TASK [tomcat : configure tomcat port] ******************************************
+2019-04-18 09:19:28,466 p=10028 u=vibakar |  changed: [local]
+2019-04-18 09:19:28,520 p=10028 u=vibakar |  TASK [tomcat : copy bookstore-app dist to tomcat] ******************************
+2019-04-18 09:19:33,369 p=10028 u=vibakar |  ok: [local]
+2019-04-18 09:19:33,421 p=10028 u=vibakar |  TASK [tomcat : start tomcat] ***************************************************
+2019-04-18 09:19:33,697 p=10028 u=vibakar |  changed: [local]
+2019-04-18 09:19:33,699 p=10028 u=vibakar |  PLAY RECAP *********************************************************************
+2019-04-18 09:19:33,700 p=10028 u=vibakar |  local                      : ok=6    changed=3    unreachable=0    failed=0   
+2019-04-18 14:02:34,430 p=13494 u=vibakar |  PLAY [local] *********************************************************************************************************************************
+2019-04-18 14:02:34,440 p=13494 u=vibakar |  TASK [Gathering Facts] ***********************************************************************************************************************
+2019-04-18 14:02:34,921 p=13494 u=vibakar |  fatal: [local]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2019-04-18 14:02:34,922 p=13494 u=vibakar |  	to retry, use: --limit @/home/vibakar/Downloads/ILP3/roles/tomcat/server.retry
+
+2019-04-18 14:02:34,922 p=13494 u=vibakar |  PLAY RECAP ***********************************************************************************************************************************
+2019-04-18 14:02:34,922 p=13494 u=vibakar |  local                      : ok=0    changed=0    unreachable=0    failed=1   
+2019-04-18 14:03:05,368 p=13534 u=vibakar |  PLAY [local] *********************************************************************************************************************************
+2019-04-18 14:03:05,382 p=13534 u=vibakar |  TASK [Gathering Facts] ***********************************************************************************************************************
+2019-04-18 14:03:06,777 p=13534 u=vibakar |  ok: [local]
+2019-04-18 14:03:06,835 p=13534 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *******************************************************************************************
+2019-04-18 14:03:07,167 p=13534 u=vibakar |  changed: [local]
+2019-04-18 14:03:07,222 p=13534 u=vibakar |  TASK [tomcat : Unarchive tomcat] *************************************************************************************************************
+2019-04-18 14:03:08,487 p=13534 u=vibakar |  changed: [local]
+2019-04-18 14:03:08,545 p=13534 u=vibakar |  TASK [tomcat : configure tomcat port] ********************************************************************************************************
+2019-04-18 14:03:08,801 p=13534 u=vibakar |  ok: [local]
+2019-04-18 14:03:08,851 p=13534 u=vibakar |  TASK [tomcat : copy bookstore-app dist to tomcat] ********************************************************************************************
+2019-04-18 14:03:13,884 p=13534 u=vibakar |  ok: [local]
+2019-04-18 14:03:13,946 p=13534 u=vibakar |  TASK [tomcat : start tomcat] *****************************************************************************************************************
+2019-04-18 14:03:14,239 p=13534 u=vibakar |  changed: [local]
+2019-04-18 14:03:14,241 p=13534 u=vibakar |  PLAY RECAP ***********************************************************************************************************************************
+2019-04-18 14:03:14,241 p=13534 u=vibakar |  local                      : ok=6    changed=3    unreachable=0    failed=0   
+2019-04-18 14:05:45,254 p=14574 u=vibakar |  PLAY [local] *********************************************************************************************************************************
+2019-04-18 14:05:45,267 p=14574 u=vibakar |  TASK [Gathering Facts] ***********************************************************************************************************************
+2019-04-18 14:05:46,591 p=14574 u=vibakar |  ok: [local]
+2019-04-18 14:05:46,652 p=14574 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *******************************************************************************************
+2019-04-18 14:05:47,040 p=14574 u=vibakar |  changed: [local]
+2019-04-18 14:05:47,120 p=14574 u=vibakar |  TASK [tomcat : Unarchive tomcat] *************************************************************************************************************
+2019-04-18 14:05:48,133 p=14574 u=vibakar |  changed: [local]
+2019-04-18 14:05:48,188 p=14574 u=vibakar |  TASK [tomcat : configure tomcat port] ********************************************************************************************************
+2019-04-18 14:05:48,613 p=14574 u=vibakar |  changed: [local]
+2019-04-18 14:05:48,669 p=14574 u=vibakar |  TASK [tomcat : copy bookstore-app dist to tomcat] ********************************************************************************************
+2019-04-18 14:05:53,201 p=14574 u=vibakar |  changed: [local]
+2019-04-18 14:05:53,252 p=14574 u=vibakar |  TASK [tomcat : start tomcat] *****************************************************************************************************************
+2019-04-18 14:05:53,536 p=14574 u=vibakar |  changed: [local]
+2019-04-18 14:05:53,539 p=14574 u=vibakar |  PLAY RECAP ***********************************************************************************************************************************
+2019-04-18 14:05:53,539 p=14574 u=vibakar |  local                      : ok=6    changed=5    unreachable=0    failed=0   
+2019-04-18 14:08:20,548 p=15690 u=vibakar |  PLAY [local] *********************************************************************************************************************************
+2019-04-18 14:08:20,560 p=15690 u=vibakar |  TASK [Gathering Facts] ***********************************************************************************************************************
+2019-04-18 14:08:21,874 p=15690 u=vibakar |  ok: [local]
+2019-04-18 14:08:21,931 p=15690 u=vibakar |  TASK [tomcat : create a folder for placing tomcat] *******************************************************************************************
+2019-04-18 14:08:22,271 p=15690 u=vibakar |  ok: [local]
+2019-04-18 14:08:22,348 p=15690 u=vibakar |  TASK [tomcat : Unarchive tomcat] *************************************************************************************************************
+2019-04-18 14:08:23,464 p=15690 u=vibakar |  changed: [local]
+2019-04-18 14:08:23,519 p=15690 u=vibakar |  TASK [tomcat : configure tomcat port] ********************************************************************************************************
+2019-04-18 14:08:23,966 p=15690 u=vibakar |  changed: [local]
+2019-04-18 14:08:24,020 p=15690 u=vibakar |  TASK [tomcat : copy bookstore-app dist to tomcat] ********************************************************************************************
+2019-04-18 14:08:28,873 p=15690 u=vibakar |  ok: [local]
+2019-04-18 14:08:28,929 p=15690 u=vibakar |  TASK [tomcat : start tomcat] *****************************************************************************************************************
+2019-04-18 14:08:29,208 p=15690 u=vibakar |  changed: [local]
+2019-04-18 14:08:29,211 p=15690 u=vibakar |  PLAY RECAP ***********************************************************************************************************************************
+2019-04-18 14:08:29,211 p=15690 u=vibakar |  local                      : ok=6    changed=3    unreachable=0    failed=0   
